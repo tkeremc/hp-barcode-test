@@ -14,7 +14,7 @@ public class BarcodeService : IBarcodeService
     
     public BarcodeService(IMongoDbContext mongoDbContext)
     {
-        _barcodeCollection = mongoDbContext.GetCollection<BarcodeModel>(AppSettingConfig.Configuration["MongoDBSettings:UserCollection"]!);
+        _barcodeCollection = mongoDbContext.GetCollection<BarcodeModel>(AppSettingConfig.Configuration["MongoDBSettings:BarcodeCollection"]!);
     }
 
     public async Task<BarcodeModel> Create([FromBody] BarcodeModel barcode)
@@ -28,13 +28,13 @@ public class BarcodeService : IBarcodeService
 
         var defaultModel = new BarcodeModel
         {
+            QrId = "there is an error",
             HpId = "zmhp-0000",
-            QrId = "123456789",
             IsDeleted = true
         };
         
         var previousModel = await _barcodeCollection.Find(x => x.QrId == barcode.QrId).FirstOrDefaultAsync();
-        if (previousModel != null) return defaultModel;
+        if (previousModel == null) return defaultModel;
         if (previousModel.QrId != barcode.QrId) return defaultModel;
         
         UpdateCheckHelper.Checker(previousModel, barcode);

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HPBarcodeTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+524217c6c0f56690a32accdcbbe18a8cfede118b")]
 [assembly: System.Reflection.AssemblyProductAttribute("HPBarcodeTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HPBarcodeTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

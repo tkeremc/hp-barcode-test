@@ -14,6 +14,8 @@ public sealed class ServiceCaller
     private static void ScopedServices(IServiceCollection services)
     {
         services.AddScoped<IBarcodeService, BarcodeService>();
+        services.AddScoped<IUserService, UserService>();
+        
     }
 
     private static void SingletonServices(IServiceCollection services)
