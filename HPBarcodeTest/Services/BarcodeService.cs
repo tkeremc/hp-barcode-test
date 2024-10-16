@@ -49,6 +49,21 @@ public class BarcodeService : IBarcodeService
         return barcode;
     }
 
+
+    public async Task<string> GetByBarcode(string barcode)
+    {
+        var model = await _barcodeCollection.Find(x => x.QrId == barcode).FirstOrDefaultAsync();
+        if (model == null)
+        {
+            return "Not Found";
+        }
+
+        var hpid = model?.HpId; // Eğer model null ise burada null dönebilir.
+
+        return hpid ?? "HpId not found"; // HpId null ise alternatif bir mesaj döndür.
+    }
+
+
     public async Task<BarcodeModel> Delete(string barcode)
     {
         var oldBarcode = await _barcodeCollection.Find(x => x.QrId == barcode).FirstOrDefaultAsync();

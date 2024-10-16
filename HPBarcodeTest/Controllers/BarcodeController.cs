@@ -21,6 +21,14 @@ namespace HPBarcodeTest.Controllers
             var barcodes = await _barcodeService.GetAll();
             return Ok(barcodes);
         }
+
+        [HttpGet("gethpid")]
+        public async Task<IActionResult> GetByBarcode(string barcode)
+        {
+            var model = await _barcodeService.GetByBarcode(barcode);
+            return Ok(model);
+        }
+        
         
         [HttpGet("get")]
         public async Task<IActionResult> GetBarcode(string id)

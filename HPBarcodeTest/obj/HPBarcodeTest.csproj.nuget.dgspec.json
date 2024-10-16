@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\setsuna\\RiderProjects\\HPBarcodeTest\\HPBarcodeTest\\HPBarcodeTest.csproj": {}
+    "/Users/tkeremc/RiderProjects/hp-barcode-test/HPBarcodeTest/HPBarcodeTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\setsuna\\RiderProjects\\HPBarcodeTest\\HPBarcodeTest\\HPBarcodeTest.csproj": {
+    "/Users/tkeremc/RiderProjects/hp-barcode-test/HPBarcodeTest/HPBarcodeTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\setsuna\\RiderProjects\\HPBarcodeTest\\HPBarcodeTest\\HPBarcodeTest.csproj",
+        "projectUniqueName": "/Users/tkeremc/RiderProjects/hp-barcode-test/HPBarcodeTest/HPBarcodeTest.csproj",
         "projectName": "HPBarcodeTest",
-        "projectPath": "C:\\Users\\setsuna\\RiderProjects\\HPBarcodeTest\\HPBarcodeTest\\HPBarcodeTest.csproj",
-        "packagesPath": "C:\\Users\\setsuna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\setsuna\\RiderProjects\\HPBarcodeTest\\HPBarcodeTest\\obj\\",
+        "projectPath": "/Users/tkeremc/RiderProjects/hp-barcode-test/HPBarcodeTest/HPBarcodeTest.csproj",
+        "packagesPath": "/Users/tkeremc/.nuget/packages/",
+        "outputPath": "/Users/tkeremc/RiderProjects/hp-barcode-test/HPBarcodeTest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\setsuna\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/tkeremc/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -99,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.402/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
